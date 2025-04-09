@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres para suportar acentuação -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Garante que a página seja responsiva -->
+  <title>Batman - FC FILMS</title> <!-- Título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="style.css" /> <!-- Importa o arquivo de estilos CSS principal do site -->
+
+  <!-- Estilo de fundo específico para esta página -->
+  <style>
+    body {
+      background-image: url('batman2.jpeg'); /* Define uma imagem de fundo */
+      background-size: cover;                /* A imagem cobre toda a tela */
+      background-position: center;           /* Centraliza a imagem no corpo */
+      background-repeat: no-repeat;          /* Impede que a imagem se repita */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho da página com navegação -->
+  <header class="barra-topo">
+    <nav>
+      <h1>
+        <!-- Link do logotipo para voltar à página principal -->
+        <a href="index.html" style="text-decoration: none;" aria-label="Página inicial FC FILMS">
+          <span style="color: blue;">FC</span> 
+          <span style="color: #f2f5f7;">FILMS</span>
+        </a>
+      </h1>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main class="conteudo">
+
+    <!-- Informações detalhadas do filme -->
+    <article class="detalhes-filme">
+      <h2>Batman: O Cavaleiro das Trevas</h2> <!-- Título do filme -->
+      <p><strong>2008 • 2h 32m • HD</strong></p> <!-- Informações básicas do filme -->
+      <p>
+        <span class="classificacao" aria-label="Classificação indicativa: 12 anos">12</span>
+        Ação, Aventura, Policial, Suspense <!-- Gêneros do filme -->
+      </p>
+      <p>A história de Batman lutando contra o crime organizado em Gotham City.</p> <!-- Sinopse do filme -->
+	  
+	<br>
+	<br>
+
+      <!-- Botões de ação: assistir e adicionar à lista -->
+      <div class="botoes">
+        <a href="https://www.youtube.com/embed/q8ncjHylG6c" class="botao-assistir" role="button">Assistir</a> <!-- Botão com link do trailer -->
+        <a href="FILMS.html" class="botao-lista" role="button" aria-label="Adicionar à lista">+</a> <!-- Botão para adicionar o filme à lista -->
+      </div>
+    </article>
+
+    <!-- Container do vídeo incorporado (trailer) -->
+    <section class="video-container" aria-label="Trailer do filme Batman">
+      <iframe 
+        src="https://www.youtube.com/embed/q8ncjHylG6c" <!-- Link do vídeo do YouTube -->
+        frameborder="0" <!-- Remove a borda do vídeo -->
+        allowfullscreen <!-- Permite o vídeo em tela cheia -->
+        title="Trailer Batman" <!-- Título acessível para leitores de tela -->
+      ></iframe>
+    </section>
+  </main>
+
+  <!-- Rodapé com direitos autorais -->
+  <footer class="barra-rodape">
+
+  </footer>
+</body>
+</html>

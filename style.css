@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	
+  background-color: #4682B4;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+/* Barra superior do site com título e navegação */
+.barra-topo {
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  font-family: Impact;
+  flex-wrap: wrap;
+}
+
+/* Estilo do título/logo dentro da barra-topo */
+.logo h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Container de links de navegação */
+.link {
+  display: auto;
+  margin-left: 500px;
+  margin-right: 20px;
+}
+
+/* Estilo dos links de navegação */
+.link a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Container principal do conteúdo da página */
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+/* Seção com informações detalhadas do filme */
+.detalhes-filme {
+  width: 60%;
+  text-align: left;
+  color: #f2f5f7;
+  margin-bottom: 20px;
+}
+
+/* Título do filme */
+.detalhes-filme h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Texto descritivo do filme */
+.detalhes-filme p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Estilo do selo de classificação indicativa */
+.classificacao {
+  background-color: #ffeb5d;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Botão vermelho de assistir */
+.botao-assistir {
+  background-color: #E50914;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Botão de adicionar à lista */
+.botao-lista {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Container do vídeo do trailer */
+.video-container {
+  width: 60%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo do iframe (trailer) */
+.video-container iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+/* Rodapé da página */
+.barra-rodape {
+  background-color: #141414;
+  color: #f2f5f7;
+  font-size: 12px;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 10px;
+}
+
+/* Espaço superior adicional no conteúdo principal */
+main {
+  padding-top: 100px;
+}
+
+/* Galeria de imagens de filmes ou séries */
+.img2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px;
+}
+
+/* Estilo das imagens da galeria */
+.img2 img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+/* Efeito hover nas imagens */
+.img2 img:hover {
+  transform: scale(1.15);
+}
+
+/* Rodapé genérico */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #0a0a0b;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  /* Ajuste do layout da barra-topo para telas menores */
+  .barra-topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Links reposicionados verticalmente em telas pequenas */
+  .link {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Ajusta largura dos blocos principais */
+  .detalhes-filme,
+  .video-container {
+    width: 90%;
+  }
+
+  /* Imagens adaptadas para telas menores */
+  .img2 img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Botões responsivos */
+  .botao-assistir,
+  .botao-lista {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Rodapé ajustado para dispositivos móveis */
+  footer {
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsividade: ajusta o layout à largura da tela -->
+  <title>La Casa de Papel - FC FILMS</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css" /> <!-- Importa o arquivo de estilos CSS principal do site -->
+
+  <!-- Estilo específico de fundo aplicado apenas a esta página -->
+  <style>
+    body {
+      background-image: url('https://culturadoria.com.br/wp-content/uploads/2019/07/La-Casa-de-Papel-terceira-temporada-1170x720.jpg'); /* Define imagem de fundo */
+      background-size: cover;   /* Faz a imagem cobrir toda a tela */
+      background-position: center; /* Centraliza a imagem */
+      background-repeat: no-repeat; /* Evita repetição da imagem */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho fixo com nome do site -->
+  <header class="barra-topo">
+    <nav>
+      <h1>
+        <a href="index.html" style="text-decoration: none;" aria-label="Página inicial FC FILMS"> <!-- Link para página principal -->
+          <span style="color: blue;">FC</span> <!-- Parte azul do nome -->
+          <span style="color: #f2f5f7;">FILMS</span> <!-- Parte clara do nome -->
+        </a>
+      </h1>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main class="conteudo">
+    <article class="detalhes-filme"> <!-- Bloco com as informações sobre a série -->
+      <h2>La Casa de Papel</h2> <!-- Nome da série -->
+      <p><strong>2017 • 5 temporadas • HD</strong></p> <!-- Informações de lançamento, temporadas e qualidade -->
+      <p>
+        <span class="classificacao" aria-label="Classificação indicativa: 16 anos">16</span> <!-- Classificação etária -->
+        Ação, Aventura, Fantasia, Ficção científica <!-- Gêneros -->
+      </p>
+      <p>Grupo de assaltantes invade a Casa da Moeda de Madri sob a liderança do Professor.</p> <!-- Sinopse -->
+	  
+	<br>
+	<br>
+
+      <!-- Botões de ação para assistir e adicionar à lista -->
+      <div class="botoes">
+        <a href="https://www.youtube.com/embed/iS5xXr-GOnM" class="botao-assistir" role="button">Assistir</a> <!-- Botão para assistir o trailer -->
+        <a href="FILMS.html" class="botao-lista" role="button" aria-label="Adicionar à lista">+</a> <!-- Botão para adicionar à lista -->
+      </div>
+    </article>
+
+    <!-- Seção com o trailer em vídeo (embed do YouTube) -->
+    <section class="video-container" aria-label="Trailer da série La Casa de Papel">
+      <iframe 
+        src="https://www.youtube.com/embed/iS5xXr-GOnM" <!-- Link do trailer -->
+        frameborder="0" <!-- Remove borda do frame -->
+        allowfullscreen <!-- Permite tela cheia -->
+        title="Trailer La Casa de Papel"
+      ></iframe>
+    </section>
+  </main>
+
+  <!-- Rodapé do site -->
+  <footer class="barra-rodape">
+   
+  </footer>
+</body>
+</html>

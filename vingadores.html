@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta charset="UTF-8" />
+
+  <!-- Define a visualização para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título da aba do navegador -->
+  <title>Vingadores - FC FILMS</title>
+
+  <!-- Link para o arquivo CSS principal do site -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Estilo inline para definir a imagem de fundo da página -->
+  <style>
+    body {
+      /* Imagem de fundo da página */
+      background-image: url('https://s2-g1.glbimg.com/P4qEajW8fHy9w6rmF29EPQxhwhU=/0x45:1400x1000/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/E/E/lR2QJpRoGwKewinYXWvA/vingadors.jpg');
+
+      /* Ajusta a imagem para cobrir toda a tela */
+      background-size: cover;
+
+      /* Centraliza a imagem */
+      background-position: center;
+
+      /* Não repete a imagem */
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho do site com logo e link para a página inicial -->
+  <header class="barra-topo">
+    <nav>
+      <h1>
+        <a href="index.html" style="text-decoration: none;" aria-label="Página inicial FC FILMS">
+          <span style="color: blue;">FC</span> 
+          <span style="color: #f2f5f7;">FILMS</span>
+        </a>
+      </h1>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main class="conteudo">
+    <!-- Informações detalhadas sobre o filme -->
+    <article class="detalhes-filme" aria-labelledby="titulo-filme">
+      <!-- Título do filme -->
+      <h2 id="titulo-filme">Vingadores: Ultimato</h2>
+
+      <!-- Informações adicionais: ano, duração e qualidade -->
+      <p><strong>2019 • 3h 1m • HD</strong></p>
+
+      <!-- Classificação e gêneros -->
+      <p><span class="classificacao">12</span> Ação, Aventura, Fantasia e Ficção científica</p>
+
+      <!-- Sinopse do filme -->
+      <p>Após os eventos de "Guerra Infinita", os Vingadores restantes tentam reverter os danos causados por Thanos.</p>
+
+		<br>
+		<br>
+
+      <!-- Botões: assistir e adicionar à lista -->
+      <div class="botoes">
+        <!-- Link para o trailer no YouTube (nova aba) -->
+        <a href="https://www.youtube.com/embed/spJoZReeIeQ" class="botao-assistir" target="_blank" rel="noopener noreferrer">Assistir</a>
+
+        <!-- Link para retornar ou adicionar à lista -->
+        <a href="FILMS.html" class="botao-lista" aria-label="Adicionar à lista">+</a>
+      </div>
+    </article>
+
+    <!-- Trailer incorporado na página -->
+    <section class="video-container" aria-label="Trailer do filme Vingadores: Ultimato">
+      <iframe 
+        src="https://www.youtube.com/embed/spJoZReeIeQ"
+        frameborder="0"
+        allowfullscreen
+        title="Trailer Vingadores: Ultimato"
+      ></iframe>
+    </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer class="barra-rodape"></footer>
+
+</body>
+</html>

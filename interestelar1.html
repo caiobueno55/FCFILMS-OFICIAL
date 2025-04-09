@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Faz com que a página seja responsiva em diferentes dispositivos -->
+  <title>Interestelar - FC FILMS</title> <!-- Título da página que aparece na aba do navegador -->
+  <link rel="stylesheet" href="style.css" /> <!-- Importa o CSS principal compartilhado -->
+
+  <!-- Estilo específico de fundo e texto para esta página -->
+  <style>
+    body {
+      background-image: url('interestelar.jpeg'); /* Define a imagem de fundo da página */
+      background-size: cover; /* A imagem cobre toda a tela */
+      background-position: center; /* Centraliza a imagem no fundo */
+      background-repeat: no-repeat; /* Evita repetição da imagem */
+    }
+
+    /* Estiliza os textos do título e parágrafos do artigo */
+    .detalhes-filme h2,
+    .detalhes-filme p {
+      color: #000; /* Texto preto */
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7); /* Sombra clara para dar contraste sobre o fundo */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho do site com nome/logo e link para a página principal -->
+  <header class="barra-topo">
+    <nav>
+      <h1>
+        <a href="index.html" style="text-decoration: none;" aria-label="Página inicial FC FILMS">
+          <span style="color: blue;">FC</span> 
+          <span style="color: #f2f5f7;">FILMS</span>
+        </a>
+      </h1>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main class="conteudo">
+
+    <!-- Informações sobre o filme Interestelar -->
+    <article class="detalhes-filme">
+      <h2>Interestelar: Ultimato</h2> <!-- Título do filme -->
+      <p><strong>2014 • 2h 49m • HD</strong></p> <!-- Informações sobre o ano, duração e qualidade -->
+      <p><span class="classificacao" aria-label="Classificação indicativa: 10 anos">10</span> Drama, Aventura e Ficção científica</p> <!-- Gênero e classificação -->
+      <p>Em um futuro sombrio, uma equipe de astronautas viaja por um buraco de minhoca em busca de um novo lar para a humanidade.</p> <!-- Sinopse -->
+
+		<br>
+		<br>
+
+      <!-- Botões de ação -->
+      <div class="botoes">
+        <!-- Link para o trailer no YouTube -->
+        <a href="https://www.youtube.com/embed/zSWdZVtXT7E" class="botao-assistir" role="button">Assistir</a>
+        <!-- Botão para voltar à lista de filmes -->
+        <a href="FILMS.html" class="botao-lista" role="button" aria-label="Adicionar à lista">+</a>
+      </div>
+    </article>
+
+    <!-- Trailer incorporado do YouTube -->
+    <section class="video-container" aria-label="Trailer do filme Interestelar">
+      <iframe 
+        src="https://www.youtube.com/embed/zSWdZVtXT7E" <!-- URL do trailer -->
+        frameborder="0" <!-- Sem borda no iframe -->
+        allowfullscreen <!-- Permite tela cheia -->
+        title="Trailer Interestelar" <!-- Título descritivo para acessibilidade -->
+      ></iframe>
+    </section>
+  </main>
+
+  <!-- Rodapé do site com direitos autorais -->
+  <footer class="barra-rodape">
+
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta charset="UTF-8" />
+
+  <!-- Define as configurações de visualização para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título da aba do navegador -->
+  <title>LOGIN FC FILMS</title>
+
+  <!-- Importa o arquivo CSS responsável pelo estilo da página de login -->
+  <link rel="stylesheet" href="login.css" />
+
+  <!-- Meta descrição para acessibilidade e SEO -->
+  <meta name="description" content="Página de cadastro do site FC FILMS para assistir filmes e séries." />
+</head>
+<body>
+  <!-- Cabeçalho do site com logo FC FILMS -->
+  <header class="barra-topo">
+    <nav>
+      <h1>
+        <!-- Link para a página principal do site -->
+        <a href="index.html" style="text-decoration: none;" aria-label="Página inicial FC FILMS">
+          <span style="color: blue;">FC</span> 
+          <span style="color: #f2f5f7;">FILMS</span>
+        </a>
+      </h1>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main class="form-container">
+    <!-- Seção com o formulário de cadastro -->
+    <section class="container" aria-label="Formulário de Cadastro">
+      
+      <!-- Formulário de cadastro -->
+      <form id="cadastroForm" method="GET" onsubmit="return handleSubmit(event)" novalidate>
+        <!-- Título e subtítulo do formulário -->
+        <h2 class="form-title">Cadastro</h2>
+        <p class="form-subtitle">Faça seu cadastro para assistir</p>
+
+        <!-- Campo de idade (mínimo 18) -->
+        <label for="idade">Idade</label>
+        <input 
+          type="number" 
+          id="idade" 
+          name="idade" 
+          min="18" 
+          placeholder="Digite sua idade" 
+          required 
+          aria-required="true"
+        />
+
+        <!-- Campo de e-mail -->
+        <label for="email">E-mail</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Informe seu e-mail" 
+          required 
+          aria-required="true"
+        />
+
+        <!-- Campo para confirmação do e-mail -->
+        <label for="confirmarEmail">Confirmar E-mail</label>
+        <input 
+          type="email" 
+          id="confirmarEmail" 
+          name="confirmarEmail" 
+          placeholder="Confirme seu e-mail" 
+          required 
+          aria-required="true"
+        />
+
+        <!-- Campo de senha com limite de 30 caracteres -->
+        <label for="senha">Senha</label>
+        <input 
+          type="password" 
+          id="senha" 
+          name="senha" 
+          placeholder="Digite sua senha" 
+          maxlength="30" 
+          required 
+          aria-required="true"
+        />
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit" class="botao-enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Importa o script JS para validar o formulário e controlar o envio -->
+  <script src="script.js"></script>
+</body>
+</html>
